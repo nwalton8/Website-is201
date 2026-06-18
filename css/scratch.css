@@ -1,0 +1,286 @@
+/* ===================================================
+   scratch.css — Noah Walton's From-Scratch Stylesheet
+   Movies & Film Page
+   =================================================== */
+
+/* 1. Body & Page Background */
+body {
+    background-color: #0d0d0d;
+    color: #e8e0d0;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Page Header / Hero */
+#hero {
+    background-color: #111;
+    background-image: linear-gradient(160deg, #1a0a00 0%, #0d0d0d 60%, #0a0a1a 100%);
+    text-align: center;
+    padding: 60px 20px 40px;
+    border-bottom: 3px solid #c8a951;
+}
+
+#hero h1 {
+    font-family: 'Georgia', serif;
+    font-size: 3rem;
+    color: #c8a951;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+#hero .tagline {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1rem;
+    color: #a09070;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+/* 3. Navigation Bar */
+#nav-bar {
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #333;
+    padding: 12px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#nav-bar a {
+    color: #c8a951;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 18px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+#nav-bar a:hover {
+    color: #fff;
+    border-bottom-color: #c8a951;
+}
+
+/* 4. Main content wrapper div */
+#main-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* 5. Section headings */
+.section-title {
+    font-family: 'Georgia', serif;
+    font-size: 1.7rem;
+    color: #c8a951;
+    border-left: 4px solid #c8a951;
+    padding-left: 14px;
+    margin-top: 50px;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+}
+
+/* 6. Film cards div */
+#film-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 28px;
+    margin-bottom: 40px;
+}
+
+.film-card {
+    background-color: #1a1a1a;
+    border: 1px solid #2e2e2e;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.film-card:hover {
+    transform: translateY(-4px);
+    border-color: #c8a951;
+}
+
+.film-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.film-card .card-body {
+    padding: 16px;
+}
+
+.film-card h3 {
+    font-family: 'Georgia', serif;
+    color: #e8e0d0;
+    font-size: 1.05rem;
+    margin: 0 0 6px;
+}
+
+.film-card .year {
+    color: #c8a951;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.82rem;
+    letter-spacing: 1px;
+}
+
+.film-card p {
+    font-size: 0.88rem;
+    color: #a09070;
+    margin-top: 8px;
+    line-height: 1.5;
+}
+
+/* 7. About / intro text div */
+#intro-section {
+    background-color: #161616;
+    border: 1px solid #2a2a2a;
+    border-radius: 6px;
+    padding: 30px;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+#intro-section p {
+    color: #c8bfb0;
+    font-size: 1rem;
+}
+
+/* 8. List styles */
+.favorite-list {
+    color: #c8bfb0;
+    font-size: 0.97rem;
+    line-height: 2;
+}
+
+.favorite-list li {
+    margin-bottom: 4px;
+}
+
+.genre-tag {
+    display: inline-block;
+    background: #c8a951;
+    color: #0d0d0d;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 3px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+/* 9. YouTube embed div */
+#video-section {
+    margin: 40px 0;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 6px;
+    border: 2px solid #c8a951;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* 10. Tableau section */
+#tableau-section {
+    margin: 40px 0;
+    text-align: center;
+}
+
+/* 11. Footer */
+#scratch-footer {
+    background-color: #111;
+    border-top: 2px solid #c8a951;
+    text-align: center;
+    padding: 30px 20px;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 60px;
+}
+
+#scratch-footer a {
+    color: #c8a951;
+    text-decoration: none;
+    margin: 0 12px;
+}
+
+#scratch-footer a:hover {
+    text-decoration: underline;
+}
+
+/* 12. Quote / blockquote styling */
+.film-quote {
+    border-left: 4px solid #c8a951;
+    margin: 30px 0;
+    padding: 16px 24px;
+    background: #161616;
+    border-radius: 0 6px 6px 0;
+    font-style: italic;
+    color: #c8bfb0;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.film-quote cite {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+    color: #c8a951;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.82rem;
+    letter-spacing: 1px;
+}
+
+/* 13. Photo image styling */
+.content-image {
+    width: 100%;
+    border-radius: 6px;
+    border: 2px solid #2e2e2e;
+    margin: 20px 0;
+    display: block;
+}
+
+/* 14. App link button */
+.app-link-btn {
+    display: inline-block;
+    background: #c8a951;
+    color: #0d0d0d;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 14px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.app-link-btn:hover {
+    background: #e8c97a;
+    color: #000;
+}
