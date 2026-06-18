@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reel Talk — Noah's Film Page</title>
+    <link rel="stylesheet" href="css/scratch.css" />
+</head>
+<body>
+
+<!-- ===== HERO ===== -->
+<div id="hero">
+    <h1>🎬 Reel Talk</h1>
+    <p class="tagline">Noah Walton's Corner of Cinema</p>
+</div>
+
+<!-- ===== NAVIGATION ===== -->
+<div id="nav-bar">
+    <a href="#favorites">Favorites</a>
+    <a href="#lists">My Lists</a>
+    <a href="#video">Watch</a>
+    <a href="#tableau">Stats</a>
+    <a href="#webapp">Game</a>
+    <a href="index.html">← Main Site</a>
+</div>
+
+<!-- ===== MAIN CONTENT ===== -->
+<div id="main-content">
+
+    <!-- INTRO -->
+    <div id="intro-section">
+        <p>Film has been one of my greatest passions since I was a kid sneaking into the living room to watch late-night movies. There's something miraculous about a well-made film — the way light, sound, performance, and story combine to create an experience that stays with you for years. I'm a nursing student by day, but I'm a cinephile at heart. This page is my little corner of the internet dedicated to the movies that have shaped how I see the world.</p>
+        <p>Browse my all-time favorites, explore how Hollywood's best perform at the box office, and test your movie knowledge in the film trivia app below!</p>
+    </div>
+
+    <!-- ===== ON-PAGE ANCHOR: FAVORITES ===== -->
+    <a id="favorites"></a>
+    <h2 class="section-title">All-Time Favorites</h2>
+
+    <!-- Film Cards with images (images NOT from Bootstrap theme) -->
+    <div id="film-grid">
+
+        <div class="film-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg" alt="The Shawshank Redemption poster" />
+            <div class="card-body">
+                <h3>The Shawshank Redemption</h3>
+                <div class="year">1994 <span class="genre-tag">Drama</span></div>
+                <p>A quietly devastating study in hope, friendship, and the indomitable human spirit. Darabont's masterpiece gets better every time.</p>
+            </div>
+        </div>
+
+        <div class="film-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Inception_poster.jpg" alt="Inception poster" />
+            <div class="card-body">
+                <h3>Inception</h3>
+                <div class="year">2010 <span class="genre-tag">Sci-Fi</span></div>
+                <p>Nolan's dream-within-a-dream thriller is endlessly rewatchable. Few blockbusters demand this much from their audience.</p>
+            </div>
+        </div>
+
+        <div class="film-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/4/4a/Inside_Out_Poster.jpg" alt="Inside Out poster" />
+            <div class="card-body">
+                <h3>Inside Out</h3>
+                <div class="year">2015 <span class="genre-tag">Animation</span></div>
+                <p>Pixar's most emotionally intelligent film. As someone studying healthcare, the portrayal of emotional complexity hits differently.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="film-quote">
+        "Every passing minute is another chance to turn it all around."
+        <cite>— Vanilla Sky (2001)</cite>
+    </div>
+
+    <!-- ===== MY LISTS — Nested List Section ===== -->
+    <a id="lists"></a>
+    <h2 class="section-title">My Lists</h2>
+
+    <!-- REQUIRED: Ordered list with an unordered list embedded inside -->
+    <ol class="favorite-list">
+        <li>
+            <strong>Top Dramatic Performances</strong>
+            <ul>
+                <li>Tom Hanks — <em>Cast Away</em> (2000)</li>
+                <li>Anthony Hopkins — <em>The Silence of the Lambs</em> (1991)</li>
+                <li>Cate Blanchett — <em>Tár</em> (2022)</li>
+                <li>Daniel Day-Lewis — <em>There Will Be Blood</em> (2007)</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Best Cinematography I've Witnessed</strong>
+            <ul>
+                <li><em>Blade Runner 2049</em> — Roger Deakins's opus</li>
+                <li><em>1917</em> — Deakins again, impossibly good</li>
+                <li><em>Roma</em> — Alfonso Cuarón's personal black-and-white poem</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Films That Changed How I Think</strong>
+            <ul>
+                <li><em>Wit</em> (2001) — A nurse and a dying English professor. Watch it once and you'll think about it for years.</li>
+                <li><em>The Diving Bell and the Butterfly</em> — Locked-in syndrome, told from inside.</li>
+                <li><em>Patch Adams</em> — Corny? Sure. But it got me thinking about healthcare differently.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Comfort Watches (On Repeat)</strong>
+            <ul>
+                <li><em>The Grand Budapest Hotel</em></li>
+                <li><em>Knives Out</em></li>
+                <li><em>La La Land</em></li>
+            </ul>
+        </li>
+    </ol>
+
+    <!-- ===== IMAGE (not from Bootstrap) ===== -->
+    <h2 class="section-title">The Magic of the Cinema</h2>
+    <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Single_screen_theater.jpg/1280px-Single_screen_theater.jpg"
+        alt="Classic single-screen movie theater interior"
+        class="content-image"
+    />
+    <p style="color:#666; font-size:0.82rem; text-align:center; margin-top:6px;">The magic of a single-screen theater — nothing beats it.</p>
+
+    <!-- ===== YOUTUBE VIDEO ===== -->
+    <a id="video"></a>
+    <div id="video-section">
+        <h2 class="section-title">Watch: Every Frame a Painting</h2>
+        <p style="color:#a09070; margin-bottom:20px;">One of the best video essays ever made about film. Tony Zhou's breakdown of what makes great cinema is essential viewing for any movie lover.</p>
+        <div class="video-wrapper">
+            <!-- REQUIRED: Embedded YouTube video -->
+            <iframe
+                src="https://www.youtube.com/embed/3Q3eITC01Fk"
+                title="Every Frame a Painting - Edgar Wright video essay"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+        <p style="color:#666; font-size:0.82rem; margin-top:10px; text-align:center;">Every Frame a Painting — "Edgar Wright - How to Do Visual Comedy"</p>
+    </div>
+
+    <!-- ===== TABLEAU EMBED ===== -->
+    <a id="tableau"></a>
+    <div id="tableau-section">
+        <h2 class="section-title">Hollywood Box Office: Tableau Data</h2>
+        <p style="color:#a09070; margin-bottom:20px; text-align:left;">An interactive look at box office performance across Hollywood's biggest films. Hover over and filter to explore the data.</p>
+        <!-- REQUIRED: Live interactive Tableau embed -->
+        <div class='tableauPlaceholder' id='viz1700000000000' style='position: relative; width:100%;'>
+            <noscript>
+                <a href='https://public.tableau.com/views/HollywoodsMostProfitableStories/HollywoodsMostProfitableStories'>
+                    <img alt='Hollywood Box Office' src='https://public.tableau.com/static/images/Ho/HollywoodsMostProfitableStories/HollywoodsMostProfitableStories/1_rss.png' style='border: none' />
+                </a>
+            </noscript>
+            <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='HollywoodsMostProfitableStories/HollywoodsMostProfitableStories' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+            </object>
+        </div>
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1700000000000');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            vizElement.style.width = '100%';
+            vizElement.style.height = '600px';
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+    </div>
+
+    <!-- ===== WEB APP LINK ===== -->
+    <a id="webapp"></a>
+    <h2 class="section-title">🎮 Film Trivia Game</h2>
+    <p style="color:#a09070; line-height:1.8;">Think you know your movies? Test yourself with my AI-powered Film Trivia Challenge! Answer questions about directors, actors, iconic scenes, and classic quotes across every genre. The AI judges your answers intelligently — no multiple choice, just real questions and real answers.</p>
+    <a href="trivia.html" class="app-link-btn">Play Film Trivia →</a>
+    &nbsp;&nbsp;
+    <a href="snake.html" class="app-link-btn" style="background:#1a1a1a;color:#c8a951;border:1px solid #c8a951;">🐍 Play Cinematic Snake →</a>
+
+    <!-- BACK TO ANCHOR: top of page -->
+    <div style="text-align:center; margin-top: 60px;">
+        <a href="#" style="color:#c8a951; font-family:Arial,sans-serif; font-size:0.85rem; letter-spacing:1px; text-transform:uppercase;">↑ Back to Top</a>
+    </div>
+
+</div><!-- end #main-content -->
+
+<!-- ===== FOOTER ===== -->
+<div id="scratch-footer">
+    <p>Navigate back to my professional pages:</p>
+    <a href="index.html">Home</a>
+    <a href="about.html">About &amp; Resume</a>
+    <a href="post.html">Nursing Blog</a>
+    <a href="contact.html">Contact</a>
+    <a href="trivia.html">Film Trivia App</a>
+    <a href="snake.html">Cinematic Snake Game</a>
+    <br /><br />
+    <p>&copy; 2025 Noah Walton &mdash; Built from scratch with HTML &amp; CSS</p>
+</div>
+
+</body>
+</html>
